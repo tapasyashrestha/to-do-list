@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 16px;
+}
+
+.container {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1.5px solid #dde3ee;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #333;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input-area input:focus {
+  border-color: #6c63ff;
+}
+
+.input-area button {
+  padding: 10px 20px;
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.input-area button:hover {
+  background-color: #574fd6;
+}
+
+ul#taskList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 20px;
+}
+
+ul#taskList li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  background: #f7f8fc;
+  border: 1px solid #e8ecf5;
+  border-radius: 10px;
+  transition: background 0.2s;
+}
+
+ul#taskList li:hover {
+  background: #eef0fb;
+}
+
+ul#taskList li input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #6c63ff;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+ul#taskList li .task-text {
+  flex: 1;
+  font-size: 15px;
+  color: #333;
+  transition: color 0.2s;
+}
+
+ul#taskList li.completed .task-text {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+ul#taskList li .delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #ccc;
+  transition: color 0.2s;
+  line-height: 1;
+}
+
+ul#taskList li .delete-btn:hover {
+  color: #e74c3c;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 13px;
+  color: #888;
+}
+
+.footer button {
+  background: none;
+  border: none;
+  font-size: 13px;
+  color: #6c63ff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.footer button:hover {
+  color: #574fd6;
+}
